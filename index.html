@@ -225,11 +225,9 @@ Recovery</div>
 
       <div class="cta">
         <a <!-- Start Now Lead Button -->
-<a class="btn-Start-Now"
-   href="https://wa.link/wt7l30"
-   target="_blank"
-   rel="noopener"
-   onclick="if(typeof fbq !== 'undefined'){ fbq('track','Lead'); }">
+<a onclick="fbq('track','Lead'); setTimeout(function(){
+   location.href='https://wa.link/wt7l30';
+}, 300);" class="btn-Start-Now">
    Start Now
 </a>
       </div>
